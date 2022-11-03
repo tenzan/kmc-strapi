@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "singularName": "car",
+    "pluralName": "cars",
+    "displayName": "Car"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string"
+    },
+    "shuppin_number": {
+      "type": "string"
+    },
+    "auction_name": {
+      "type": "string"
+    },
+    "auction_place": {
+      "type": "string"
+    },
+    "chassis": {
+      "type": "string"
+    },
+    "estimated_arrival_date": {
+      "type": "date"
+    },
+    "actual_arrival_date": {
+      "type": "date"
+    },
+    "picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "purchased_date": {
+      "type": "date"
+    }
+  }
+}
