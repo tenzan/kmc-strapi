@@ -1,5 +1,4 @@
-module.exports = ({ env }) => ({
-  // ...
+module.exports = {
   upload: {
     config: {
       provider: "strapi-provider-upload-dos",
@@ -8,9 +7,9 @@ module.exports = ({ env }) => ({
         secret: process.env.DO_SPACE_SECRET_KEY,
         endpoint: process.env.DO_SPACE_ENDPOINT,
         space: process.env.DO_SPACE_BUCKET,
-        directory: "media", // optional
+        directory: process.env.DO_SPACE_DIRECTORY,
+        cdn: process.env.DO_SPACE_CDN,
       },
     },
   },
-  // ...
-});
+};
