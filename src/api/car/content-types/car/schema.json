@@ -116,6 +116,35 @@
       "relation": "manyToOne",
       "target": "api::auction.auction",
       "inversedBy": "cars"
+    },
+    "model": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "probox",
+        "roomy",
+        "pixus",
+        "fielder"
+      ]
+    },
+    "color": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "red",
+        "black",
+        "yellow",
+        "blue"
+      ]
     }
   }
 }
